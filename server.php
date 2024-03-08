@@ -2,24 +2,28 @@
 
 session_start();
 
-if (isset($_GET['password'])) {
+if (isset($_GET['password']) && !empty($_GET['password'])) {
+
+    if (!is_numeric($_GET['password'])) {
+        header('Location: ./index.php');
+        exit("the number isn't integer! 👀");
+    }
     $pwordLength = $_GET['password'];
     echo 'if password: ' . $pwordLength . '<br>';
 } else {
-    echo 'password non impostata.<br>';
+    header('Location: ./index.php');
+    exit("empty field! 🐱‍💻");
 }
 
-
+#including external functions
 include_once __DIR__ . '/functions/functions.php';
 
 
 $newPword = passwordGenerator($pwordLength);
-
-echo 'postF password: ' . $newPword . '<br>';
-
 $_SESSION['newpword'] = $newPword;
+#echo 'postF password: ' . $newPword . '<br>';
+#echo 'session pword: ' . $_SESSION['newpword'];
 
-echo 'session pword: ' . $_SESSION['newpword'];
-
+#back to index.php
 header('Location: ./index.php');
 exit('exit!');

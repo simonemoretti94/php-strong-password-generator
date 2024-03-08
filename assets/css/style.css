@@ -1,0 +1,16 @@
+body {
+    background-color: #001632 !important;
+
+    & .container {
+        >p#p_parameters {
+            min-height: 30px;
+            width: 100%;
+            border-radius: 5px;
+            padding: .5rem;
+            background-color: #cff4fc;
+            color: #46aee3;
+
+            text-align: left;
+        }
+    }
+}
