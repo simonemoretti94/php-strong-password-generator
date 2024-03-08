@@ -8,9 +8,15 @@ body {
             border-radius: 5px;
             padding: .5rem;
             background-color: #cff4fc;
-            color: #46aee3;
+            color: #055192;
+            text-shadow: -1.5px 0 0 #A2F4FC;
 
             text-align: left;
         }
+
     }
+}
+
+div#input_roundcheck_wrapper input {
+    margin-top: .3rem;
 }
