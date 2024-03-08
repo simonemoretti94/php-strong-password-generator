@@ -20,7 +20,7 @@
 
     <div class="container col-10 p-0 ">
         <?php if (!isset($tempPword) || !empty($tempPword)) : ?>
-            <p id="p_parameters">Nessun parametro valido inserito</p>
+            <p id="p_parameters" class="mt-1">Nessun parametro valido inserito</p>
         <?php endif; ?>
     </div>
 
