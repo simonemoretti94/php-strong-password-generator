@@ -23,6 +23,8 @@
             <?php endif; ?>
         </div>
     </div>
+
+    <?php include_once __DIR__ . '/parts/footer.php'; ?>
 </body>
 
 <?php session_unset() ?>

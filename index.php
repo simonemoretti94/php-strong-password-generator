@@ -80,6 +80,8 @@
         <?php endif; ?>
     </div>
 
+    <?php include_once __DIR__ . '/parts/footer.php'; ?>
+
     <?php session_unset() ?>
 </body>
 

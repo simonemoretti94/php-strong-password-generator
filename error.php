@@ -18,6 +18,8 @@
             <h1 class="text-white text-center ">Whoops, an error occurred!</h1>
         </div>
     </div>
+
+    <?php include_once __DIR__ . '/parts/footer.php'; ?>
 </body>
 
 <style>
