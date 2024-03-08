@@ -33,17 +33,17 @@
                 <label class="col-8 text-text-capitalize me-1" for="password">Lunghezza password:</label>
                 <input class="col border border-1 text-center border rounded-1 " type="number" name="password" id="password" placeholder="write here your password" required value="5">
             </div>
-            <div class="wrapper d-flex flex-row justify-content-between ">
+            <div class="wrapper mt-3 d-flex flex-row justify-content-between ">
                 <label class="col-8" for="y/n">Consenti ripetizioni di uno o più caratteri:</label>
                 <div class="col-4" class="wrapper d-flex flex-column justify-content-between align-items-start ">
                     <div id="input_check_wrapper" class="wrapper d-flex flex-column justify-content-between ">
                         <div class="wrapper d-flex ">
                             <input class="form-check-input" type="radio" name="si" id="check_si">
-                            <label for="si">Sì</label>
+                            <label class="ms-1" for="si">Sì</label>
                         </div>
                         <div class="wrapper d-flex ">
                             <input class="form-check-input" type="radio" name="no" id="check_no">
-                            <label for="No">No</label>
+                            <label class="ms-1" for="No">No</label>
                         </div>
                     </div>
                     <div id="input_roundcheck_wrapper" class="wrapper mt-3 d-flex flex-column justify-content-evenly align-items-start">
