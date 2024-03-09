@@ -1,6 +1,6 @@
 <footer class="bg-secondary bg-gradient">
     <nav>
-        <a href="./index.php">Home <span>(only this works for now)</span></a>
+        <a href="./index.php">Home <span>(only this works at the moment)</span></a>
         <a href="">About</a>
         <a href="">Contacts</a>
     </nav>
