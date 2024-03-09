@@ -1,12 +1,12 @@
 <?php
 
-function passwordGenerator($numberL)
+function basicPasswordGenerator($numberL)
 {
     $tempStr = str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@&');
     return substr($tempStr, 0, $numberL);
 };
 
-function passwordGenerator2($numberL, $allowRepetition, $allowLetters, $allowNumbers, $allowSymbols)
+function ComplexPasswordGenerator($numberL, $allowRepetition, $allowLetters, $allowNumbers, $allowSymbols)
 {
     $characters = '';
 
@@ -20,6 +20,10 @@ function passwordGenerator2($numberL, $allowRepetition, $allowLetters, $allowNum
 
     if ($allowSymbols === 'on') {
         $characters .= '@&';
+    }
+
+    if ($characters === '') {
+        $characters .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
 
     if ($allowRepetition === 'no') {

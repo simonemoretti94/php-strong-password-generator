@@ -16,7 +16,7 @@
 
 <body>
     <?php include_once __DIR__ . '/parts/header.php'; ?>
-    <?php $tempPword = $_SESSION['newpword']; ?>
+    <?php $tempPword = $_SESSION['newpword1']; ?>
 
     <div class="container col-10 p-0 ">
         <?php if (!isset($tempPword) || !empty($tempPword)) : ?>

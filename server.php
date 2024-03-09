@@ -13,8 +13,10 @@ if (isset($_GET['passwordL']) && !empty($_GET['passwordL'])) {
         $allowLetters = $_GET['lettere'];
     }
     if (isset($_GET['numeri'])) {
+        $allowNumbers = $_GET['numeri'];
     }
     if (isset($_GET['simboli'])) {
+        $allowSymbols = $_GET['simboli'];
     }
 
     if (!is_numeric($_GET['passwordL'])) {
@@ -32,8 +34,11 @@ if (isset($_GET['passwordL']) && !empty($_GET['passwordL'])) {
 include_once __DIR__ . '/functions/functions.php';
 
 
-$newPword = passwordGenerator($pwordLength);
-$_SESSION['newpword'] = $newPword;
+$newPword1 = basicPasswordGenerator($pwordLength);
+$_SESSION['newpword1'] = $newPword1;
+
+$newPword2 = ComplexPasswordGenerator($pwordLength, $allowRepetition, $allowLetters, $allowNumbers, $allowSymbols);
+$_SESSION['newpword2'] = $newPword2;
 
 
 #back to index.php
