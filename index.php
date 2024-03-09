@@ -78,16 +78,7 @@
             </div>
         </form>
 
-
-
     </div>
-
-    <div class="container">
-        <?php if (isset($tempPword) && !empty($tempPword)) : ?>
-            <h2 class="text-center text-white ">Your password is <?php echo $_SESSION['newpword']; ?></h2>
-        <?php endif; ?>
-    </div>
-
     <?php include_once __DIR__ . '/parts/footer.php'; ?>
 
     <?php session_unset() ?>

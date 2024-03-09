@@ -19,6 +19,8 @@
         </div>
     </div>
 
+    <?php session_destroy(); ?>
+
     <?php include_once __DIR__ . '/parts/footer.php'; ?>
 </body>
 

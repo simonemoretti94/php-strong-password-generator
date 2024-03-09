@@ -23,7 +23,8 @@ function ComplexPasswordGenerator($numberL, $allowRepetition, $allowLetters, $al
     }
 
     if ($characters === '') {
-        $characters .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        header('Location: ./error.php');
+        exit('No parameters 🐲');
     }
 
     if ($allowRepetition === 'no') {
