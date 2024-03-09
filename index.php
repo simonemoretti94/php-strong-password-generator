@@ -31,7 +31,7 @@
         <form class="col-12" action="./server.php" method="get">
             <div class="wrapper col-12 d-flex  flex-row justify-content-start">
                 <label class="col-8 text-text-capitalize me-1" for="passwordL">Lunghezza password:</label>
-                <input class="col border border-1 text-center border rounded-1 " type="number" name="passwordL" id="passwordL" placeholder="write here your password" required value="5">
+                <input class="col border border-1 text-center border rounded-1 " type="number" name="passwordL" id="passwordL" placeholder="write here your password" required value="10">
             </div>
 
             <div class="wrapper mt-3 d-flex flex-row justify-content-between ">
@@ -40,12 +40,12 @@
                     <div id="input_check_wrapper" class="wrapper d-flex flex-column justify-content-between ">
 
                         <div class="wrapper d-flex ">
-                            <input class="form-check-input" type="radio" name="si" id="check_si">
+                            <input class="form-check-input" type="radio" name="si" id="check_si" value="si">
                             <label class="ms-1" for="si">Sì</label>
                         </div>
 
                         <div class="wrapper d-flex ">
-                            <input class="form-check-input" type="radio" name="no" id="check_no">
+                            <input class="form-check-input" type="radio" name="no" id="check_no" value="no">
                             <label class="ms-1" for="No">No</label>
                         </div>
 

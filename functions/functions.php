@@ -37,6 +37,8 @@ function ComplexPasswordGenerator($numberL, $allowRepetition, $allowLetters, $al
     } else {
         $password = '';
 
+        $characters .= $characters;
+
         for ($i = 0; $i < $numberL; $i++) {
             $password .= $characters[rand(0, strlen($characters) - 1)];
         }
