@@ -30,12 +30,12 @@
 
 
         <form class="col-12" action="./server.php" method="get">
-            <div class="wrapper col-12 d-flex  flex-row justify-content-start">
+            <div id="first_wrapper" class="wrapper col-12 d-flex justify-content-start">
                 <label class="col-8 text-text-capitalize me-1" for="passwordL">Lunghezza password:</label>
                 <input id="input_password" class="col border border-1 text-center border rounded-1 " type="number" name="passwordL" id="passwordL" placeholder="write here your password" required value="">
             </div>
 
-            <div class="wrapper mt-3 d-flex flex-row justify-content-between ">
+            <div id="second_wrapper" class="wrapper mt-3 d-flex justify-content-between ">
                 <label class="col-8" for="y/n">Consenti ripetizioni di uno o più caratteri:</label>
                 <div class="col-4" class="wrapper d-flex flex-column justify-content-between align-items-start ">
                     <div id="input_check_wrapper" class="wrapper d-flex flex-column justify-content-between ">
@@ -89,6 +89,23 @@
     button a {
         color: white;
         text-decoration: none;
+    }
+
+    #first_wrapper,
+    #second_wrapper {
+        flex-direction: row;
+    }
+
+    @media screen and (max-width: 776px) {
+
+        #first_wrapper,
+        #second_wrapper {
+            flex-direction: column;
+        }
+
+        #input_roundcheck_wrapper {
+            margin-bottom: .5rem;
+        }
     }
 </style>
 
