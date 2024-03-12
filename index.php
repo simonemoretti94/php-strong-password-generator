@@ -74,7 +74,7 @@
             </div>
             <div class="wrapper">
                 <button class="btn btn-sm btn-primary ms-1">Invia</button>
-                <button class="btn btn-sm btn-secondary ms-1">Annulla</button>
+                <button id="button_dismiss" class="btn btn-sm btn-secondary ms-1"><a href="./dismiss.php">Annulla</a></button>
 
             </div>
         </form>
@@ -86,7 +86,10 @@
 </body>
 
 <style>
-
+    button a {
+        color: white;
+        text-decoration: none;
+    }
 </style>
 
 </html>
