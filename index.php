@@ -9,6 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" rel="script" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php-strong-password-generator</title>
@@ -31,7 +32,7 @@
         <form class="col-12" action="./server.php" method="get">
             <div class="wrapper col-12 d-flex  flex-row justify-content-start">
                 <label class="col-8 text-text-capitalize me-1" for="passwordL">Lunghezza password:</label>
-                <input class="col border border-1 text-center border rounded-1 " type="number" name="passwordL" id="passwordL" placeholder="write here your password" required value="10">
+                <input id="input_password" class="col border border-1 text-center border rounded-1 " type="number" name="passwordL" id="passwordL" placeholder="write here your password" required value="">
             </div>
 
             <div class="wrapper mt-3 d-flex flex-row justify-content-between ">
